@@ -1,0 +1,60 @@
+body, html {
+    font-size: 14px;
+    /* min-height: 100vh; */
+}
+
+.form-container {
+    min-height: 100vh;
+    background-color: #f8f5d7;
+    overflow-y: auto !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins';
+    font-size: 14px;
+    background: beige;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.formDaftar {
+    /* height: 100%; */
+    width: 1200px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-control,
+.form-select {
+    font-size: 14px;
+}
+
+.containerHasil {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins';
+    font-size: 14px;
+    background: beige;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    /* height: 100%; */
+}
+
+.hasilFormDaftar {
+    width: 800px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 15px;
+}
+
+/* .swal2-backdrop-show {
+    background: beige;
+    overflow: auto !important;
+    padding-right: 0 !important;
+} */
