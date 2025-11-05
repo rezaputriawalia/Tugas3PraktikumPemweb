@@ -1,6 +1,5 @@
 body, html {
     font-size: 14px;
-    /* min-height: 100vh; */
 }
 
 .form-container {
@@ -19,7 +18,6 @@ body, html {
 }
 
 .formDaftar {
-    /* height: 100%; */
     width: 1200px;
     padding: 20px;
     background: #f8f9fa;
@@ -43,7 +41,6 @@ body, html {
     background: beige;
     padding-top: 30px;
     padding-bottom: 50px;
-    /* height: 100%; */
 }
 
 .hasilFormDaftar {
@@ -52,9 +49,3 @@ body, html {
     background: #f8f9fa;
     border-radius: 15px;
 }
-
-/* .swal2-backdrop-show {
-    background: beige;
-    overflow: auto !important;
-    padding-right: 0 !important;
-} */

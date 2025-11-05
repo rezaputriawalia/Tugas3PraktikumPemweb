@@ -6,9 +6,6 @@ $sql = "SELECT * FROM pendaftar WHERE id = $id";
 $query = mysqli_query($connect, $sql);
 $data = mysqli_fetch_assoc($query);
 $fasilitas = explode( ', ', $data['fasilitas']);
-// print_r(mysqli_num_rows($fasilitas));
-// print_r($data['lokasi']);
-// echo($data['fasilitas'][0]);
 ?>
 
 <!DOCTYPE html>

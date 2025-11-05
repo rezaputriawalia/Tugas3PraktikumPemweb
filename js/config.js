@@ -1,6 +1,5 @@
 const urlParams = new URLSearchParams(window.location.search);
 const statusParam = urlParams.get('status');
-// console.log(statusParam);
 
 var pesanBerhasil;
 var pesanGagal;
@@ -20,9 +19,6 @@ if (statusParam === "failed") {
 } else if (statusParam === "deleteFailed") {
     pesanGagal = "Terjadi kesalahan saat menghapus data!"
 }
-
-// console.log(pesanBerhasil);
-
 
 if (statusParam === 'success' || statusParam === 'updateSuccess' || statusParam === "deleteSuccess") {
     Swal.fire({
@@ -81,27 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 backdrop: true,
             }).then((result) => {
                 if (result.isConfirmed) {
-                    // kalau kamu mau arahkan ke file PHP untuk hapus:
                     window.location = `php/prosesHapus.php?id=${id}`;
-                    // Swal.fire({
-                    //     toast: true,
-                    //     position: 'top-end',
-                    //     icon: 'success',
-                    //     title: 'Data berhasil dihapus!',
-                    //     showConfirmButton: false,
-                    //     timer: 2000,
-                    //     timerProgressBar: true
-                    // });
-
-                    // atau kalau pakai AJAX:
-                    /*
-                    fetch(`hapus.php?id=${id}`)
-                      .then(res => res.text())
-                      .then(res => {
-                        Swal.fire('Dihapus!', 'Data berhasil dihapus.', 'success')
-                          .then(() => location.reload());
-                      });
-                    */
                 }
             });
         });

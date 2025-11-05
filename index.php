@@ -65,9 +65,7 @@ $query = mysqli_query($connect, $sql);
                                 <td style="text-align: center;">
                                     <a href="detailData.php?id=<?= $data['id']; ?>"><button type="button" class="btn btn-primary"><i class="fa-solid fa-circle-info"></i>&nbsp;Detail</button></a>
                                     <a href="formEdit.php?id=<?= $data['id']; ?>"><button type="button" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i>&nbsp;Edit</button></a>
-                                    <!-- <a href="php/prosesHapus.php?id=<?//= $data['id']; ?>"> -->
-                                        <button type="button" class="btn btn-danger btn-hapus" data-id="<?= $data['id']; ?>"><i class="fa-solid fa-trash"></i>&nbsp;Hapus</button>
-                                    <!-- </a> -->
+                                    <button type="button" class="btn btn-danger btn-hapus" data-id="<?= $data['id']; ?>"><i class="fa-solid fa-trash"></i>&nbsp;Hapus</button>
                                 </td>
                             </tr>
                     <?php
